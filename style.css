@@ -9,10 +9,11 @@ color: white;
 /*background-color: red;*/
 backdrop-filter: -10px;
 height: 50px;
-width: 1254px;
+width: auto;
 border-radius: 20px;
 -webkit-backdrop-filter: blur(050px);
 backdrop-filter: blur(050px);
+justify-content: space-around;
 }
 .navit{
 margin-left: 450px;
@@ -44,17 +45,6 @@ color: red;
 .resume{
 text-decoration: none;
 }
-
-@media scrolrevel{
-from{
-opacity: 0;
-transform: translateY(100px);
-}
-to{
-opacity: 1;
-transform: translateY(0px);
-}
-}
 .li1{
 /*text-shadow: 10px 0px 20px #0079FF, -10px 0px 20px #0079FF;*/
 cursor: pointer;
@@ -67,10 +57,11 @@ display: flex;
 margin-top: 120px;
 background-color: #0C0C0C;
 height: 500px;
-width: 1250px;
+width: auto;
 /* box-shadow: 10px 0px 20px green, -20px 0px 20px green;*/
 border-radius: 20px;
 border: 02PX SOLID green;
+justify-content: space-evenly;
 }
 .mbd1{/*background-color:  white;*/
 height: 500px;
@@ -228,7 +219,7 @@ border-bottom: 01px solid white;
 }/* about me parts*/
 .abm{
 height: 980px;
-width: 1255px;
+width: auto;
 background-color: black;
 }
 .abm0{
@@ -354,17 +345,17 @@ background-image: url("dit.webp");
 .skills{
 display: flex;
 height: 400px;
-width: 1254px;
-background-color: white;
+width: auto;
+background-color: black;
 }
 .skl1{
 height: 450px;
-width: 1264px;
+width: auto;
 background-color: black;
 }
 .skl2{
 height: 400px;
-width: 627px;
+width: auto;
 background-color: red;
 }
 .sklh1{
@@ -379,7 +370,7 @@ margin-left: 250px;
     margin-left: 320px;
 display: flex;
 height: 100px;
-width: 600px;
+width: auto;
 /*background-color: yellow;*/
 }
 .skla{
@@ -411,45 +402,58 @@ width: 600px;
     background-color: black;
 }
 @media screen and (max-width:412px){
+   
     .nav{
-        visibility: collapse;
+        margin-top: 05px;
         width: 400px;
-     margin-left: 05px;
-        flex-direction: column;
+        height: 60px;
+     font-size: 02px;
+        -webkit-backdrop-filter: blur(050px);
+backdrop-filter: blur(050px);
     
     }
-    .nav ul{
-
-    display: inline;
+    .li1{
+        height: 50px;
+        width: 400px;
+    font-size: 02px;
+    }
+    .bx1{
+        background-color: white;
+        height: 50px;
+        width: 400px;
+        font-size: 02px;
     }
     .navit{
         width: 400px;
-  
+        display: flex;
     }
-    .bx1{
-        width: 400px;
+    .ul1{
+        display: flex;
     }
     .mbd{
     flex-direction: column;
-    margin-top: 0300px;
     width: 400px;
-    height: 850px;
+    height: 900px;
     }
-    .mdb1{
-    margin-top: 200px;
+    .mbd1{
+
     width: 400px;
     }
     .mbdh1{
         font-size: 40px;
         width: 400px;
         margin-left: 02px;
+        margin-top: 0px;
     }
     .mbdh2{
+        visibility: collapse;
         font-size: 40px;
         width: 400px;
         letter-spacing: 00px;
         margin-left: 0px;
         font-size: 20px;
+        animation: none;
+        border-left: 0px;
         
     }
     .mbdh3{
@@ -500,12 +504,13 @@ width: 600px;
     }
     .abmr1{
         width: 400px;
-        font-size: 20px;
+        font-size: 15px;
     }
     .abmr2{
         width: 100px;
         flex-direction: column;
         margin-right: 500px;
+        font-size: 20px;
     }
     .abmr3{
         width: 400px;
@@ -538,6 +543,7 @@ width: 600px;
         visibility: collapse;
     }
     .li1{
+        height: 50px;
         width: 400px;
     font-size: 20px;
     }
